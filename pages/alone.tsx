@@ -9,7 +9,7 @@ export default function Alone() {
   return (
     <div className="py-10 dark:bg-black flex items-center grid-cols-3 grid-flow-col gap-4 divide-x">
       <div lang="en" className={roboto.className}>
-        <div className="row-span-2 text-left text-2xl dark:text-gray-200">
+        <div className="row-span-2 text-left text-xl dark:text-gray-200">
           You Are Not Alone According to the Anxiety & Depression Association of
           America, anxiety disorders are the most common mental illness in the
           United States, affecting some 40 million adults, or about 18% of the
