@@ -65,7 +65,13 @@ const Layout = ({ children }: Props) => {
           <div className="flex flex-row justify-center items-center">
             <p className="text-sm text-gray-500">© 2023 Self help AI</p>
             <p className="text-gray-500 px-1 ">•</p>
-            <p className="text-sm text-gray-500">Twitter</p>
+            <Link
+              href="https://twitter.com/AiTherapist"
+              className="text-sm text-gray-500"
+              target="_blank"
+            >
+              Twitter
+            </Link>
             <p className="text-gray-500 px-1 ">•</p>
             <p className="text-sm text-gray-500">Instagram</p>
           </div>
