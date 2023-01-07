@@ -73,7 +73,13 @@ const Layout = ({ children }: Props) => {
               Twitter
             </Link>
             <p className="text-gray-500 px-1 ">•</p>
-            <p className="text-sm text-gray-500">Instagram</p>
+            <Link
+              href="https://www.instagram.com/selftherapistai/"
+              className="text-sm text-gray-500"
+              target="_blank"
+            >
+              Instagram
+            </Link>
           </div>
         </footer>
       </div>
