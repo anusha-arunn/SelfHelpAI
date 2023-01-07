@@ -4,6 +4,7 @@ import { useState } from "react";
 
 export default function Home() {
   const [gender, setGender] = useState("man");
+  const [emotion, setEmotion] = useState("");
   const [age, setAge] = useState(30);
   const [help, setHelp] = useState("");
   const [loading, setLoading] = useState(false);
@@ -32,8 +33,8 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>OpenAI Quickstart</title>
-        <link rel="icon" href="/dog.png" />
+        <title>Self Help AI</title>
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
@@ -59,6 +60,24 @@ export default function Home() {
             value={age}
             onChange={(e) => setAge(Number.parseInt(e.target.value))}
           />
+          <br />
+          <label>How do you feel today?</label>
+          <select
+            name="emotion"
+            value={emotion}
+            onChange={(e) => setEmotion(e.target.value)}
+          >
+            <option value="happy">Happy</option>
+            <option value="sad">Sad</option>
+            <option value="frustrated">Frustrated</option>
+            <option value="angry">Angry</option>
+            <option value="excited">Excited</option>
+            <option value="nervous">Nervous</option>
+            <option value="calm">Calm</option>
+            <option value="content">Content</option>
+            <option value="disappointed">Disappointed</option>
+            <option value="anxious">Anxious</option>
+          </select>
           <br />
           <label>How can I help you today?</label>
           <input
