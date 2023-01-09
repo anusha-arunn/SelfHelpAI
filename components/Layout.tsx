@@ -58,10 +58,10 @@ const Layout = ({ children }: Props) => {
             </Link>
           </div>
         </nav> */}
-      <div className="relative min-h-screen">
-        <div className="max-auto mt-5">
+      <div className="flex flex-col min-h-screen">
+        <div className="mt-5">
           <nav className={roboto.className}>
-            <div className="mx-auto flex flex-wrap items-center justify-between">
+            <div className="flex flex-wrap items-center justify-between">
               {/* <Image
                   src={"/favicon.ico"}
                   width={100}
@@ -167,11 +167,11 @@ const Layout = ({ children }: Props) => {
             </div>
           </nav>
         </div>
-        <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
+        <Script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></Script>
 
         <main className="flex-grow py-7">{children}</main>
 
-        <footer className="absolute bottom-0 w-full py-10">
+        <footer className="mt-auto w-full pb-5">
           <div className="flex flex-row justify-center items-center">
             <p className="flex-1 text-sm text-gray-500">© 2023 Self help AI</p>
             <Link

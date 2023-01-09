@@ -3,14 +3,15 @@ import React from "react";
 
 export default function Home() {
   return (
-    <div>
+    <div className="text-center justify-center">
       <Head>
         <title>AI Therapist</title>
       </Head>
 
-      <main className="items-center text-center justify-center">
-        <div>Hiiii!</div>
-      </main>
+      <div className="text-center justify-center">
+        <p className="text-4xl pt-5">Support Better Mental Health</p>
+        <br />
+      </div>
     </div>
   );
 }

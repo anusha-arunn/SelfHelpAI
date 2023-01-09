@@ -23,7 +23,7 @@ export default function SelfHelp() {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ gender, age, help }),
+      body: JSON.stringify({ gender, age, emotion, help }),
     });
     const data = await response.json();
     setResult(data.result.replaceAll("\n", "<br />"));
