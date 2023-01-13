@@ -15,51 +15,8 @@ interface Props {
 const Layout = ({ children }: Props) => {
   return (
     <>
-      {/* <div className="min-h-screen dark:bg-black">
-        <nav className={roboto.className}>
-          <div className="flex flex-row justify-center items-center gap-8 py-1 pt-10 text-l">
-            <h1 className="flex-1">
-              <Link
-                href="/"
-                className="text-center font-bold text-4xl hover:text-gray-500 duration-200 dark:text-gray-100 dark:hover:text-gray-600"
-              >
-                {`AI Therapist`}
-              </Link>
-            </h1>
-            <Link
-              href="/"
-              className="hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-600"
-            >
-              Home
-            </Link>
-            <Link
-              href="/disclaimer"
-              className="hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-600"
-            >
-              Disclaimer
-            </Link>
-            <Link
-              href="/alone"
-              className="hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-600"
-            >
-              Prevalance
-            </Link>
-            <Link
-              href="/meditate"
-              className="hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-600"
-            >
-              Meditate
-            </Link>
-            <Link
-              href="/connect"
-              className="hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-600"
-            >
-              Connect
-            </Link>
-          </div>
-        </nav> */}
       <div className="flex flex-col min-h-screen">
-        <div className="mt-5">
+        <div className="mt-11">
           <nav className={roboto.className}>
             <div className="flex flex-wrap items-center justify-between">
               {/* <Image
@@ -70,7 +27,7 @@ const Layout = ({ children }: Props) => {
                 ></Image> */}
               <Link
                 href="/"
-                className="flex-1 justify-start items-start text-xl font-semibold"
+                className="flex-1 justify-start items-start text-4xl font-semibold"
               >
                 {`AI Therapist`}
               </Link>
@@ -138,20 +95,21 @@ const Layout = ({ children }: Props) => {
                       Self-Help
                     </Link>
                   </li>
-                  <li>
-                    <Link
-                      href="/disclaimer"
-                      className="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-cyan-700 md:p-0"
-                    >
-                      Disclaimer
-                    </Link>
-                  </li>
+
                   <li>
                     <Link
                       href="/alone"
                       className="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-cyan-700 md:p-0"
                     >
                       Alone
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/disclaimer"
+                      className="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-cyan-700 md:p-0"
+                    >
+                      Disclaimer
                     </Link>
                   </li>
                   <li>
@@ -173,7 +131,19 @@ const Layout = ({ children }: Props) => {
 
         <footer className="mt-auto w-full pb-5">
           <div className="flex flex-row justify-center items-center">
-            <p className="flex-1 text-sm text-gray-500">© 2023 Self help AI</p>
+            <div className="flex-1">
+              <div className="flex flex-row gap-1">
+                <p className="text-sm text-gray-500">© 2023 AI Therapist</p>
+                <p className="text-sm text-gray-500"> | </p>
+                <Link href="/about" className="text-sm text-gray-500">
+                  About
+                </Link>
+                <p className="text-sm text-gray-500"> | </p>
+                <Link href="/mission" className="text-sm text-gray-500">
+                  Mission
+                </Link>
+              </div>
+            </div>
             <Link
               href="https://twitter.com/AiTherapist"
               className="text-sm text-gray-500"

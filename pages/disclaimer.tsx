@@ -1,15 +1,15 @@
-import { Lato } from "@next/font/google";
+import { Pavanam } from "@next/font/google";
 
-const roboto = Lato({
-  weight: "300",
+const pavanam = Pavanam({
+  weight: "400",
   subsets: ["latin"],
 });
 
 export default function Disclaimer() {
   return (
-    <div className="py-10 dark:bg-black flex items-center grid-cols-3 grid-flow-col gap-4 divide-x">
-      <div lang="en" className={roboto.className}>
-        <div className="row-span-2 text-center text-xl dark:text-gray-200">
+    <div className="py-10 dark:bg-black items-center">
+      <div lang="en" className={pavanam.className}>
+        <div className="text-center text-xl dark:text-gray-200">
           This AI is intented to just support you and does not provide
           professional help. A medical disclaimer declares that this site
           content is for informational purposes only, and should not be taken as

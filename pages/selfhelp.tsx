@@ -31,7 +31,7 @@ export default function SelfHelp() {
   }
 
   return (
-    <div>
+    <div className="flex flex-col justify-between items-center">
       <h3>Help generator 🎁 💡</h3>
       <form onSubmit={onSubmit}>
         <label>For whom is the help?</label>

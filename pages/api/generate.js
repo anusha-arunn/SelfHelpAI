@@ -21,5 +21,5 @@ export default async function (req, res) {
   res.status(200).json({ result: completion.data.choices[0].text });
 }
 function generatePrompt(gender, age, emotion, help) {
-  return `Help with ${emotion} at ${age} and a ${gender}`;
+  return `${help} with ${emotion} at ${age} and a ${gender}`;
 }
