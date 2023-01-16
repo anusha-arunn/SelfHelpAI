@@ -8,11 +8,9 @@ const roboto = Lato({
 
 export default function connect() {
   return (
-    <div className="py-10 dark:bg-black flex justify-center items-center">
+    <div className="py-10 flex justify-center items-center">
       <div lang="en" className={roboto.className}>
-        <div className="text-justify text-xl dark:text-gray-200">
-          Coming up!
-        </div>
+        <div className="text-justify text-xl">Coming up!</div>
       </div>
     </div>
   );

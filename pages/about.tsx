@@ -7,9 +7,9 @@ const pavanam = Pavanam({
 
 export default function ABout() {
   return (
-    <div className="py-10 dark:bg-black items-center">
+    <div className="py-10 items-center">
       <div lang="en" className={pavanam.className}>
-        <div className="text-xl text-justify dark:text-gray-200">
+        <div className="text-xl text-justify">
           Sometimes you feel alone, or like no one will understand, take comfort
           in the fact that you are part of the 1 in 13 people worldwide who
           suffers from anxiety, according to the World Health Organization

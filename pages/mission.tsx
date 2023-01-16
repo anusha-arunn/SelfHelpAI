@@ -7,9 +7,9 @@ const pavanam = Pavanam({
 
 export default function Mission() {
   return (
-    <div className="py-10 dark:bg-black items-center">
+    <div className="py-10 items-center">
       <div lang="en" className={pavanam.className}>
-        <div className="text-justify text-xl dark:text-gray-200">
+        <div className="text-justify text-xl">
           The mission of an AI therapist is to provide accessible and convenient
           mental health support to individuals who may not have access to
           traditional therapy services. This technology aims to empower

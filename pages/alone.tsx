@@ -7,9 +7,9 @@ const pavanam = Pavanam({
 
 export default function Alone() {
   return (
-    <div className="py-10 dark:bg-black items-center">
+    <div className="py-10 items-center">
       <div lang="en" className={pavanam.className}>
-        <div className="text-justify text-xl dark:text-gray-200">
+        <div className="text-justify text-xl">
           You Are Not Alone According to the Anxiety & Depression Association of
           America, anxiety disorders are the most common mental illness in the
           United States, affecting some 40 million adults, or about 18% of the
