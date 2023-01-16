@@ -35,7 +35,7 @@ const Layout = ({ children }: Props) => {
               <button
                 data-collapse-toggle="mobile-menu"
                 type="button"
-                className="md:hidden ml-3 text-gray-400 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300 rounded-lg inline-flex items-center justify-center"
+                className="md:hidden ml-3 text-gray-400 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300 rounded-lg inline-flex items-center justify-center outline-black"
                 aria-controls="mobile-menu-2"
                 aria-expanded="false"
               >
@@ -72,7 +72,7 @@ const Layout = ({ children }: Props) => {
                   <li>
                     <Link
                       href="/"
-                      className="md:bg-transparent text-white block pl-3 pr-4 py-2 md:text-cyan-900 md:p-0 rounded focus:outline-none"
+                      className="md:bg-transparent text-gray-700 hover:bg-gray-50 block pl-3 pr-4 py-2 md:text-cyan-900 md:p-0 rounded focus:outline-none"
                       aria-current="page"
                     >
                       Home
@@ -129,10 +129,10 @@ const Layout = ({ children }: Props) => {
 
         <main className="flex-grow py-7">{children}</main>
 
-        <footer className="mt-auto w-full pb-5">
+        <footer className="mt-auto w-full">
           <div className="flex flex-row justify-center items-center">
             <div className="flex-1">
-              <div className="flex flex-row gap-1">
+              <div className="flex flex-row grow gap-1">
                 <p className="text-sm text-gray-500">© 2023 AI Therapist</p>
                 <p className="text-sm text-gray-500"> | </p>
                 <Link href="/about" className="text-sm text-gray-500">

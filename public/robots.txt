@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://aitherapist.co
+
+# Sitemaps
+Sitemap: https://aitherapist.com/sitemap.xml
