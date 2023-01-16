@@ -1,5 +1,4 @@
 import Head from "next/head";
-import HeadSEO from "../components/Head";
 import Image from "next/image";
 import Script from "next/script";
 
@@ -7,7 +6,17 @@ export default function Home() {
   return (
     <div className="text-center justify-center">
       <Head>
-        <HeadSEO />
+        {/* SEO */}
+
+        <title>AI Therapist</title>
+
+        <meta name="description" content="Quick solutions for your website." />
+        <meta name="keywords" content="AI Therapist, Mental Health, WHO" />
+        <meta property="og:url" content="https://aitherapist.co/" />
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta content="IE=edge" httpEquiv="X-UA-Compatible" />
+        <meta name="robots" content="all" />
       </Head>
       <Script
         id="0"
