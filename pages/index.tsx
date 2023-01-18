@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Script from "next/script";
+import { ButtonColor } from "../components/Chat/ButtonColor";
 
 export default function Home() {
   return (
@@ -28,7 +29,7 @@ export default function Home() {
         }}
       />
 
-      <div className="text-center items-center justify-center">
+      <div className="text-center items-center object-cemter justify-center">
         <p className="text-4xl pt-5">Support Better Mental Health</p>
         <p className="text-2xl pt-5">
           It's time to break the silence and break the stigma
@@ -36,13 +37,13 @@ export default function Home() {
         <p className="text-2xl pt-5">Take the first step towards healing</p>
         <p className="text-2xl pt-5">Find your inner peace</p>
         <br />
-
-        <Image
+        <ButtonColor />
+        {/* <Image
           src="/heartinhand.png"
           alt="hih"
           width={100}
           height={100}
-        ></Image>
+        ></Image> */}
       </div>
     </div>
   );

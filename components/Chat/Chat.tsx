@@ -9,7 +9,7 @@ const COOKIE_NAME = "AI Therapist";
 export const initialMessages: Message[] = [
   {
     who: "bot",
-    message: "Hi! I’m A friendly AI therapist. How are you feeling today? ",
+    message: "Hi! I’m a friendly AI therapist. How are you feeling today? ",
   },
 ];
 

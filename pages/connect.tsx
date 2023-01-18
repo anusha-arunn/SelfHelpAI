@@ -1,5 +1,4 @@
 import { Lato } from "@next/font/google";
-import { Chat } from "../components/Chat";
 
 const roboto = Lato({
   weight: "300",

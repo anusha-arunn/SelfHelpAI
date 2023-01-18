@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/api/generate.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "deprecated/generate.js"],
   "exclude": ["node_modules"]
 }

@@ -8,9 +8,7 @@ export const LoadingChatLine = () => (
   <div className="flex min-w-full animate-pulse px-4 py-5 sm:px-6">
     <div className="flex flex-grow space-x-3">
       <div className="min-w-0 flex-1">
-        <p className="font-large text-xxl text-gray-900">
-          <p className="hover:underline">AI-Therapist</p>
-        </p>
+        <p className="font-large text-xl text-gray-900">AI-Therapist</p>
         <div className="space-y-4 pt-4">
           <div className="grid grid-cols-3 gap-4">
             <div className="col-span-2 h-2 rounded bg-zinc-500"></div>
@@ -44,21 +42,16 @@ export function ChatLine({ who = "bot", message }: Message) {
         who != "bot" ? "float-right clear-both" : "float-left clear-both"
       }
     >
-      <div className="float-right mb-5 rounded-lg bg-white px-4 py-5 shadow-lg ring-1 ring-zinc-100 sm:px-6">
+      <div className="float-right mb-5 rounded-lg bg-slate-50 px-4 py-5 shadow-lg ring-1 ring-zinc-100 sm:px-6">
         <div className="flex space-x-3">
           <div className="flex-1 gap-4">
-            <p className="font-large text-xxl text-gray-900">
-              <a href="#" className="hover:underline">
+            <p className="font-large text-xl">
+              <a className="text-gray-900 hover:text-gray-500 hover:cursor-pointer">
                 {who == "bot" ? "AI Therapist" : "You"}
               </a>
             </p>
-            <p
-              className={
-                who == "bot" ? "font-semibold font- " : "text-gray-400"
-              }
-            >
-              {formatteMessage}
-            </p>
+
+            {formatteMessage}
           </div>
         </div>
       </div>
