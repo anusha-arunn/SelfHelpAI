@@ -15,3 +15,4 @@ class MyDocument extends Document {
 }
 
 export default MyDocument;
+//bg-gradient-to-t from-blue-200 to-indigo-900

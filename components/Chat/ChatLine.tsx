@@ -8,7 +8,7 @@ export const LoadingChatLine = () => (
   <div className="flex min-w-full animate-pulse px-4 py-5 sm:px-6">
     <div className="flex flex-grow space-x-3">
       <div className="min-w-0 flex-1">
-        <p className="font-large text-xl text-gray-900">AI-Therapist</p>
+        <p className="font-large text-xl text-gray-900">AI Therapist</p>
         <div className="space-y-4 pt-4">
           <div className="grid grid-cols-3 gap-4">
             <div className="col-span-2 h-2 rounded bg-zinc-500"></div>
