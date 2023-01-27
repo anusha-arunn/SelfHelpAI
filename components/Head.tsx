@@ -8,8 +8,14 @@ export default function Main() {
 
         <title>AI Therapist</title>
 
-        <meta name="description" content="Quick solutions for your website." />
-        <meta name="keywords" content="AI Therapist, Mental Health, WHO" />
+        <meta
+          name="description"
+          content="Quick solutions for your mental health."
+        />
+        <meta
+          name="keywords"
+          content="AI therapist, mental health, counseling, virtual therapy, AI-powered therapy, mental well-being, personalized support, virtual counseling, AI therapy, mental health support, mental health services, mental health help, mental health resources, mental health technology."
+        />
         <meta property="og:url" content="https://aitherapist.co/" />
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />

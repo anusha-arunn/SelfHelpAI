@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import { NavBar } from "../components/Chat/dropdown";
 import Script from "next/script";
 import { Merriweather_Sans } from "@next/font/google";
 
@@ -18,12 +18,7 @@ const Layout = ({ children }: Props) => {
       <div className="flex flex-col min-h-screen">
         <div className="mt-11">
           <nav className={roboto.className}>
-            <div className="flex flex-wrap items-center justify-between">
-              <Link
-                href="/"
-                className="flex-1 justify-start items-start text-4xl font-semibold"
-              >
-                {/* <svg
+            {/* <svg
                   width="150"
                   height="150"
                   viewBox="0 0 329.99999999999994 198.0233637241006"
@@ -86,94 +81,10 @@ const Layout = ({ children }: Props) => {
                     <path d="M12.7 6 l-5.22 7.54 l0 6.46 l-1.66 0 l0 -6.46 l-5.22 -7.54 l1.9 0 l4.14 6.02 l4.16 -6.02 l1.9 0 z M31.548000000000002 5.800000000000001 c3.64 0 7.16 2.96 7.16 7.2 s-3.52 7.2 -7.16 7.2 c-3.66 0 -7.16 -2.96 -7.16 -7.2 s3.5 -7.2 7.16 -7.2 z M31.548000000000002 18.62 c2.74 0 5.44 -2.32 5.44 -5.62 s-2.7 -5.62 -5.44 -5.62 c-2.76 0 -5.44 2.32 -5.44 5.62 s2.68 5.62 5.44 5.62 z M59.495999999999995 6 l1.66 0 l0 8.92 c0 3.44 -2.24 5.38 -5.08 5.38 s-5.08 -1.94 -5.08 -5.38 l0 -8.92 l1.66 0 l0 8.92 c0 2.62 1.56 3.8 3.42 3.8 s3.42 -1.18 3.42 -3.8 l0 -8.92 z M84.024 20 l-1.8 0 l-3.54 -5.04 l-0.38 0 l-2.9 0 l0 5.04 l-1.66 0 l0 -14 l4.56 0 c3.14 0 4.96 1.92 4.96 4.52 c0 2 -1.08 3.56 -3 4.16 z M75.404 7.5600000000000005 l0 5.92 l2.86 0 c2.02 0 3.34 -1.04 3.34 -2.96 c0 -1.94 -1.32 -2.96 -3.34 -2.96 l-2.86 0 z M116.5 5.76 c2.18 0 3.78 1.44 4.38 2.94 l-1.26 0.68 c-0.64 -1.28 -1.66 -2.12 -3.12 -2.12 c-1.54 0 -2.6 0.88 -2.6 2.1 c0 1.14 0.72 1.86 2.24 2.44 l1.02 0.38 c2.52 0.94 4.1 2.02 4.1 4.24 c0 2.4 -2.3 3.88 -4.68 3.88 s-4.34 -1.44 -4.88 -3.44 l1.34 -0.64 c0.48 1.48 1.74 2.56 3.54 2.56 c1.6 0 2.96 -0.92 2.96 -2.34 c0 -1.6 -1.12 -2.2 -2.78 -2.84 l-1.04 -0.4 c-2.12 -0.8 -3.48 -1.9 -3.48 -3.88 c0 -2.04 1.8 -3.56 4.26 -3.56 z M144.668 20 l-1.44 -3.3 l-7.48 0 l-1.44 3.3 l-1.76 0 l6.24 -14 l1.38 0 l6.26 14 l-1.76 0 z M136.368 15.3 l6.24 0 l-3.12 -7.12 z M166.476 7.5 l-6.56 0 l0 4.74 l5.42 0 l0 1.42 l-5.42 0 l0 6.34 l-1.7 0 l0 -14 l8.26 0 l0 1.5 z M180.224 18.44 l6.66 0 l0 1.56 l-7.06 0 l-1.26 0 l0 -14 l1.66 0 l6.48 0 l0 1.56 l-6.48 0 l0 4.64 l5.04 0 l0 1.52 l-5.04 0 l0 4.72 z M219.91999999999996 6 c3.14 0 4.96 1.92 4.96 4.52 s-1.82 4.44 -4.96 4.44 l-2.9 0 l0 5.04 l-1.66 0 l0 -14 l4.56 0 z M219.87999999999997 13.48 c2.02 0 3.34 -1.04 3.34 -2.96 c0 -1.94 -1.32 -2.96 -3.34 -2.96 l-2.86 0 l0 5.92 l2.86 0 z M238.628 18.44 l6.28 0 l0 1.56 l-7.94 0 l0 -14 l1.66 0 l0 12.44 z M268.41599999999994 20 l-1.44 -3.3 l-7.48 0 l-1.44 3.3 l-1.76 0 l6.24 -14 l1.38 0 l6.26 14 l-1.76 0 z M260.116 15.3 l6.24 0 l-3.12 -7.12 z M293.52399999999994 18.5 c-1.28 1.1 -2.9 1.7 -4.7 1.7 c-3.64 0 -7.16 -2.96 -7.16 -7.2 s3.52 -7.2 7.16 -7.2 c1.78 0 3.38 0.6 4.64 1.66 l-1.02 1.16 c-0.98 -0.78 -2.24 -1.24 -3.5 -1.24 c-2.86 0 -5.56 2.32 -5.56 5.62 s2.7 5.62 5.56 5.62 c1.28 0 2.56 -0.48 3.54 -1.28 z M307.272 18.44 l6.66 0 l0 1.56 l-7.06 0 l-1.26 0 l0 -14 l1.66 0 l6.48 0 l0 1.56 l-6.48 0 l0 4.64 l5.04 0 l0 1.52 l-5.04 0 l0 4.72 z"></path>
                   </g>
                 </svg> */}
-                {`AI Therapist`}
-              </Link>
 
-              <button
-                data-collapse-toggle="mobile-menu"
-                type="button"
-                className="md:hidden ml-3 text-gray-400 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300 rounded-lg inline-flex items-center justify-center outline-black"
-                aria-controls="mobile-menu-2"
-                aria-expanded="false"
-              >
-                <svg
-                  className="w-6 h-6"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                    clipRule="evenodd"
-                  ></path>
-                </svg>
-                <svg
-                  className="hidden w-6 h-6"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                    clipRule="evenodd"
-                  ></path>
-                </svg>
-              </button>
-              <div
-                className="hidden md:block w-full md:w-auto"
-                id="mobile-menu"
-              >
-                <ul className="flex-col md:flex-row flex md:space-x-8 mt-4 md:mt-0 md:text-l md:font-medium">
-                  <li>
-                    <Link
-                      href="/"
-                      className="md:bg-transparent text-gray-700 hover:bg-gray-50 block pl-3 pr-4 py-2 md:text-cyan-900 md:p-0 rounded focus:outline-none"
-                      aria-current="page"
-                    >
-                      Home
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/chatAI"
-                      className="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-cyan-700 md:p-0"
-                    >
-                      AI-Therapist
-                    </Link>
-                  </li>
-
-                  <li>
-                    <Link
-                      href="/alone"
-                      className="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-cyan-700 md:p-0"
-                    >
-                      Alone
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/disclaimer"
-                      className="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-cyan-700 md:p-0"
-                    >
-                      Disclaimer
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/connect"
-                      className="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-cyan-700 md:p-0"
-                    >
-                      Connect
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
+            <NavBar />
           </nav>
         </div>
-        <Script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></Script>
 
         <main className="flex-grow py-7">{children}</main>
 
