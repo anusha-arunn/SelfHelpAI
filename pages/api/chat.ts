@@ -54,7 +54,7 @@ export default async function handler(req: NextRequest) {
   const payload = {
     model: "text-davinci-003",
     prompt: finalPrompt,
-    temperature: 0.7,
+    temperature: 0.5,
     max_tokens: 2048,
     top_p: 1,
     frequency_penalty: 0,
