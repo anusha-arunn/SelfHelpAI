@@ -1,4 +1,4 @@
-export default function SignIn() {
+export default function SignUp() {
   return (
     <>
       <div className="relative flex flex-col justify-center overflow-hidden py-6 sm:py-12">
@@ -28,7 +28,7 @@ export default function SignIn() {
                     id="email"
                     placeholder="you@company.com"
                     className="w-full rounded-md border border-gray-300 px-3 py-2.5 placeholder-gray-300 shadow shadow-gray-100 focus:border-gray-500 focus:outline-none valid:[&:not(:placeholder-shown)]:border-green-500 [&:not(:placeholder-shown):not(:focus):invalid~span]:block invalid:[&:not(:placeholder-shown):not(:focus)]:border-red-400"
-                    autoComplete="on"
+                    autoComplete="off"
                     required
                     pattern="[a-z0-9._+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                   />
@@ -41,13 +41,18 @@ export default function SignIn() {
                     <label htmlFor="password" className="text-sm text-gray-600">
                       Password
                     </label>
+                    <a
+                      href="#!"
+                      className="text-sm text-gray-400 hover:text-indigo-500 focus:text-indigo-500 focus:outline-none"
+                    >
+                      Forgot password?
+                    </a>
                   </div>
                   <input
                     type="password"
                     name="password"
                     id="password"
                     placeholder="Your Password"
-                    autoComplete="Your password"
                     className="peer w-full rounded-md border border-gray-300 px-3 py-2.5 placeholder-gray-300 shadow shadow-gray-100 focus:border-gray-500 focus:outline-none valid:[&:not(:placeholder-shown)]:border-green-500 [&:not(:placeholder-shown):not(:focus):invalid~span]:block invalid:[&:not(:placeholder-shown):not(:focus)]:border-red-400"
                     pattern=".{6,}"
                     required
@@ -57,39 +62,20 @@ export default function SignIn() {
                   </span>
                 </div>
                 <div className="mb-6">
-                  <div className="mb-2 flex justify-between">
-                    <label htmlFor="password" className="text-sm text-gray-600">
-                      Confirm Password
-                    </label>
-                  </div>
-                  <input
-                    type="password"
-                    name="password"
-                    id="passwordConfirm"
-                    placeholder="Your Password"
-                    className="peer w-full rounded-md border border-gray-300 px-3 py-2.5 placeholder-gray-300 shadow shadow-gray-100 focus:border-gray-500 focus:outline-none valid:[&:not(:placeholder-shown)]:border-green-500 [&:not(:placeholder-shown):not(:focus):invalid~span]:block invalid:[&:not(:placeholder-shown):not(:focus)]:border-red-400"
-                    pattern="id.password"
-                    required
-                  />
-                  <span className="mt-2 hidden text-sm text-red-400">
-                    Password does not match{" "}
-                  </span>
-                </div>
-                <div className="mb-6">
                   <button
                     type="submit"
                     className="w-full rounded-md bg-indigo-500 px-3 py-4 text-white focus:bg-indigo-600 focus:outline-none group-invalid:pointer-events-none group-invalid:opacity-70"
                   >
-                    Sign up
+                    Sign in
                   </button>
                 </div>
                 <p className="text-center text-sm text-gray-500">
-                  Have an account?{" "}
+                  Don&#x27;t have an account yet?{" "}
                   <a
-                    href="components/Signup.tsx"
+                    href="#!"
                     className="font-semibold text-indigo-500 focus:text-indigo-500 focus:underline focus:outline-none"
                   >
-                    Sign in
+                    Sign up
                   </a>
                   .
                 </p>
