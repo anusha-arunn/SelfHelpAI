@@ -5,17 +5,17 @@ export function NavBar() {
   const [navbar, setNavbar] = useState(false);
 
   return (
-    <nav className="w-full">
+    <nav className="px-2 py-4 bg-white/40 backdrop-blur-lg sm:px-4 shadow-xl shadow-blue-500/20 ">
       <div className="justify-between mx-auto lg:max-w-7xl md:items-center md:flex ">
         <div>
           <div className="flex items-center justify-between">
             <Link
               href="/"
-              className="flex-1 justify-start items-start text-3xl hover:text-gray-600"
+              className="flex-1 px-4 justify-start items-start text-3xl hover:text-gray-500 ease-in duration-200"
             >{`AI Therapist`}</Link>
             <div className="md:hidden">
               <button
-                className="p-2 text-gray-700 hover:text-gray-400 rounded-md outline-none focus:border-gray-400 focus:border"
+                className="p-2 text-gray-700 hover:text-gray-400"
                 onClick={() => setNavbar(!navbar)}
               >
                 {navbar ? (
@@ -59,27 +59,27 @@ export function NavBar() {
           >
             <ul className="items-center justify-center space-y-2 md:flex md:space-x-4 md:space-y-0">
               <a href="/">
-                <li className="text-gray-700 hover:bg-gray-50 border-b border-gray-100 rounded-lg md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-black md:p-0">
+                <li className="text-gray-700 hover:bg-zinc-100/90 border-b border-gray-100 rounded-lg md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-black md:p-0">
                   Home
                 </li>
               </a>
               <a href="/chatAI">
-                <li className="text-gray-700 hover:bg-gray-50 border-b border-gray-100 rounded-lg md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-black md:p-0">
+                <li className="text-gray-700 hover:bg-zinc-100/90 border-b border-gray-100 rounded-lg md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-black md:p-0">
                   AI-Therapist
                 </li>
               </a>
               <a href="/alone">
-                <li className="text-gray-700 hover:bg-gray-50 border-b border-gray-100 rounded-lg md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-black md:p-0">
+                <li className="text-gray-700 hover:bg-zinc-100/90 border-b border-gray-100 rounded-lg md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-black md:p-0">
                   Alone
                 </li>
               </a>
               <a href="/disclaimer">
-                <li className="text-gray-700 hover:bg-gray-50 border-b border-gray-100 rounded-lg md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-black md:p-0">
+                <li className="text-gray-700 hover:bg-zinc-100/90 border-b border-gray-100 rounded-lg md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-black md:p-0">
                   Disclaimer
                 </li>
               </a>
               <a href="/connect">
-                <li className="text-gray-700 hover:bg-gray-50 border-b border-gray-100 rounded-lg md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-black md:p-0">
+                <li className="text-gray-700 hover:bg-zinc-100/90 border-b border-gray-100 rounded-lg md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-black md:p-0">
                   Connect
                 </li>
               </a>
