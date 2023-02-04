@@ -42,7 +42,7 @@ export function ChatLine({ who = "bot", message }: Message) {
         who != "bot" ? "float-right clear-both" : "float-left clear-both"
       }
     >
-      <div className="float-right mb-5 rounded-lg bg-slate-50 px-4 py-5 shadow-lg ring-1 ring-zinc-100 sm:px-6">
+      <div className="float-right mb-5 rounded-lg bg-slate-50 bg-opacity-50 px-4 py-5 backdrop-blur-lg shadow-lg ring-1 ring-zinc-100/70 sm:px-6">
         <div className="flex space-x-3">
           <div className="flex-1 gap-4">
             <p className="font-large text-xl">
