@@ -9,8 +9,8 @@ export default function Main() {
         <title>AI Therapist</title>
 
         <meta
-          name="description"
-          content="Quick solutions for your mental health."
+          name="keywords"
+          content="AI Therapist, Mental Health, WHO, mental fitness, meditation, therapy"
         />
         <meta
           name="keywords"
@@ -21,6 +21,12 @@ export default function Main() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta content="IE=edge" httpEquiv="X-UA-Compatible" />
         <meta name="robots" content="all" />
+
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6169174361219593"
+          crossOrigin="anonymous"
+        ></script>
 
         {/* Open Graph
         <meta property="og:title" content="HandCraftWeb" />

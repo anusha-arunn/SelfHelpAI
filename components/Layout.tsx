@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { NavBar } from "../components/Chat/dropdown";
 import { Merriweather_Sans } from "@next/font/google";
-
+import Head from "../components/Head";
 const roboto = Merriweather_Sans({
   weight: "400",
   subsets: ["latin"],
@@ -14,6 +14,7 @@ interface Props {
 const Layout = ({ children }: Props) => {
   return (
     <>
+      <Head />
       <div className="flex flex-col justify-center items-center min-h-screen bg-gray-100 px-4">
         <header className="sticky top-0 z-10 w-screen backdrop-blur-sm">
           <NavBar />
