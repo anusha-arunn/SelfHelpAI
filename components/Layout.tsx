@@ -26,7 +26,7 @@ const Layout = ({ children }: Props) => {
           <div className="flex flex-row justify-center items-center">
             <div className="flex-1">
               <div className="flex flex-row grow gap-1">
-                <p className="text-sm text-gray-800">2023 AI Therapist</p>
+                <p className="text-sm text-gray-800">©2023 AI Therapist</p>
                 <p className="text-sm text-gray-800"> | </p>
                 <Link href="/about" className="text-sm text-gray-800">
                   About
@@ -34,6 +34,10 @@ const Layout = ({ children }: Props) => {
                 <p className="text-sm text-gray-800"> | </p>
                 <Link href="/mission" className="text-sm text-gray-800">
                   Mission
+                </Link>
+                <p className="text-sm text-gray-800"> | </p>
+                <Link href="/termsofservice" className="text-sm text-gray-800">
+                  Terms of Service
                 </Link>
               </div>
             </div>

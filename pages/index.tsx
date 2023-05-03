@@ -61,35 +61,39 @@ export default function Home() {
         <p className="text-2xl pt-3">Find your inner peace</p>
         <br />
         <h1>
-          In today's fast-paced world, it is easy to feel disconnected from
-          others despite being surrounded by people. Even with the prevalence of
-          social media and online communication, feelings of loneliness and
-          isolation are common. In times of hardship, having someone to turn to
-          for support is essential. However, not everyone has access to this
-          type of support system. That's where AI Therapist comes in. At AI
-          Therapist, we believe that being heard is a fundamental aspect of
-          being human. It's essential to have someone to talk to, someone who
-          will listen without judgment and provide a safe space to express your
-          thoughts and emotions. But what do you do if you don't have anyone to
-          talk to? That's where our AI-powered platform comes in. We recognized
-          that there are many people who don't have access to traditional
-          therapy or support systems. This could be due to a lack of resources,
-          stigma surrounding mental health, or simply a lack of time. Our goal
-          was to create a solution that would make being heard a reality for
-          everyone, regardless of their circumstances. With AI Therapist, users
-          can access a virtual therapist at any time, from anywhere. Our
-          platform uses advanced algorithms to provide personalized support and
-          guidance based on the user's input. Whether you need help with
-          managing stress, dealing with anxiety, or simply want to talk to
-          someone, our virtual therapists are available to listen and offer
-          guidance. The power of listening cannot be understated. By providing a
-          safe space for people to express their thoughts and feelings, we aim
-          to improve mental health outcomes and overall well-being. At AI
-          Therapist, we believe that everyone deserves to be heard. Our mission
-          is to use the power of AI to provide a safe and accessible space for
-          people to express themselves and receive personalized support. We are
-          committed to improving mental health outcomes and making a positive
-          impact on people's lives.
+          In our fast-paced world, it's easy to feel disconnected from others,
+          despite being surrounded by people. This is especially true when it
+          comes to mental health. Loneliness and isolation are common, and many
+          people don't have access to traditional therapy or support systems. AI
+          Therapist is a solution that aims to make being heard a reality for
+          everyone, regardless of their circumstances. Our platform is powered
+          by advanced algorithms that provide personalized support and guidance
+          based on the user's input. Whether you're dealing with stress,
+          anxiety, or just need someone to talk to, our virtual therapists are
+          available to listen and offer guidance. We believe that being heard is
+          a fundamental aspect of being human, and we're committed to using the
+          power of AI to provide a safe and accessible space for people to
+          express themselves. The importance of listening cannot be understated.
+          When people feel heard and understood, they're more likely to
+          experience positive mental health outcomes and overall well-being.
+          Unfortunately, not everyone has someone to turn to for support. This
+          could be due to a lack of resources, stigma surrounding mental health,
+          or simply a lack of time. AI Therapist is a solution that addresses
+          these issues by providing a virtual therapist that can be accessed at
+          any time, from anywhere. Our mission is to improve mental health
+          outcomes and make a positive impact on people's lives. We believe that
+          everyone deserves to be heard, and we're committed to using the power
+          of AI to make that a reality. Our platform is designed to provide
+          personalized support and guidance that's tailored to each user's
+          unique needs. We're constantly improving our algorithms and expanding
+          our services to ensure that we're providing the best possible support
+          to our users. In conclusion, AI Therapist is a platform that's
+          designed to provide accessible and personalized support to people who
+          need it most. We believe that being heard is a fundamental aspect of
+          being human, and we're committed to using the power of AI to make that
+          a reality for everyone. Our goal is to improve mental health outcomes
+          and make a positive impact on people's lives, and we're constantly
+          working to achieve that mission.
         </h1>
         <br />
         <p>
@@ -112,9 +116,6 @@ export default function Home() {
           </div>
         );
       })}
-      <div className="flex py-2 items-center object-center justify-center">
-        <Image alt="logo" src={"/Logo.png"} height={250} width={250}></Image>
-      </div>
     </div>
   );
 }
