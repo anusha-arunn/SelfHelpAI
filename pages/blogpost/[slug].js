@@ -3,7 +3,6 @@ import { useState } from "react";
 import { useEffect } from "react";
 import Head from "next/head";
 import Link from "next/link";
-import ReactMarkdown from "react-markdown";
 
 export default function Blog() {
   const [post, setPost] = useState([]);
