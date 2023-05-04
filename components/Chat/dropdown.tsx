@@ -73,6 +73,11 @@ export function NavBar() {
                   Alone
                 </li>
               </a>
+              <a href="/Articles">
+                <li className="text-gray-700 hover:bg-zinc-100/90 border-b border-gray-100 rounded-lg md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-black md:p-0">
+                  Wellness Blog
+                </li>
+              </a>
               <a href="/disclaimer">
                 <li className="text-gray-700 hover:bg-zinc-100/90 border-b border-gray-100 rounded-lg md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-black md:p-0">
                   Disclaimer

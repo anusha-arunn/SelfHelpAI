@@ -20,7 +20,8 @@
     "**/*.ts",
     "**/*.tsx",
     "deprecated/generate.js",
-    "pull/test.jsx"
+    "pull/test.jsx",
+    "pages/api/blog.js"
   ],
   "exclude": ["node_modules"]
 }
