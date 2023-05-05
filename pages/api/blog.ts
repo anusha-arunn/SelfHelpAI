@@ -1,6 +1,10 @@
 import * as fs from "fs";
+import { NextApiRequest, NextApiResponse } from "next";
 
-export default async function handler(req, res) {
+export default async function handler(
+  req: NextApiRequest,
+  res: NextApiResponse
+) {
   let data = await fs.promises.readdir("Blog");
   console.log(data);
   let myfile;
