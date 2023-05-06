@@ -6,8 +6,10 @@ import Link from "next/link";
 
 export default function Blog() {
   const [post, setPost] = useState([]);
+  const [isLoading, setLoading] = useState(false);
   const router = useRouter();
   useEffect(() => {
+    setLoading(true);
     if (!router.isReady) return;
     const { slug } = router.query;
     fetch(`https://aitherapist.co/api/getblogs?slug=${slug}`)
@@ -16,8 +18,12 @@ export default function Blog() {
       })
       .then((data) => {
         setPost(data);
+        setLoading(false);
       });
   }, [router.isReady]);
+
+  if (isLoading) return <p>Loading...</p>;
+  if (!post) return <p>No data</p>;
 
   return (
     <>

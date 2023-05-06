@@ -12,7 +12,6 @@ export default function Articles() {
         return a.json();
       })
       .then((data) => {
-        console.log(data);
         setBlogs(data);
         setLoading(false);
       });
