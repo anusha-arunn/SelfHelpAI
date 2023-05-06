@@ -4,7 +4,9 @@ import { useEffect, useState } from "react";
 
 export default function Articles() {
   const [blogs, setBlogs] = useState([]);
+  const [isLoading, setLoading] = useState(false);
   useEffect(() => {
+    setLoading(true);
     fetch("https://aitherapist.co/api/blog", { method: "GET" })
       .then((a) => {
         return a.json();
@@ -12,8 +14,11 @@ export default function Articles() {
       .then((data) => {
         console.log(data);
         setBlogs(data);
+        setLoading(false);
       });
   }, []);
+  if (isLoading) return <p>Loading...</p>;
+  if (!blogs) return <p>No data</p>;
   return (
     <>
       <Head>

@@ -5,18 +5,21 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  let data = await fs.promises.readdir("components/Blog");
-  console.log(data);
-  let myfile;
-  let allBlogs = [];
-  for (let index = 0; index < data.length; index++) {
-    const item = data[index];
-    myfile = await fs.promises.readFile("components/Blog/" + item, "utf-8");
-    try {
-      allBlogs.push(JSON.parse(myfile));
-    } catch (error) {
-      console.error(`Error parsing JSON data for file ${item}: ${error}`);
+  try {
+    const data = await fs.promises.readdir("components/Blog");
+    console.log(data);
+    const allBlogs = [];
+    for (const item of data) {
+      const myfile = await fs.promises.readFile(
+        `components/Blog/${item}`,
+        "utf-8"
+      );
+      const blog = JSON.parse(myfile);
+      allBlogs.push(blog);
     }
+    res.status(200).json(allBlogs);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: "Internal Server Error" });
   }
-  res.status(200).json(allBlogs);
 }
