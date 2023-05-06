@@ -1,22 +1,18 @@
-import * as fs from "fs";
+import fs from "fs";
+import path from "path";
 import { NextApiRequest, NextApiResponse } from "next";
 
-export default async function handler(
-  req: NextApiRequest,
-  res: NextApiResponse
-) {
+export default function handler(req: NextApiRequest, res: NextApiResponse) {
   try {
-    const data = await fs.promises.readdir("../../Blog");
-    console.log(data);
-    const allBlogs = [];
-    for (const item of data) {
-      const myfile = await fs.promises.readFile(`../../Blog/${item}`, "utf-8");
-      const blog = JSON.parse(myfile);
-      allBlogs.push(blog);
-    }
-    res.status(200).json(allBlogs);
+    const blogPostsPath = path.join(process.cwd(), "data", "blog");
+    const fileNames = fs.readdirSync(blogPostsPath);
+    const blogPosts = fileNames.map((fileName) => {
+      const filePath = path.join(blogPostsPath, fileName);
+      const fileContents = fs.readFileSync(filePath, "utf8");
+      return JSON.parse(fileContents);
+    });
+    res.status(200).json(blogPosts);
   } catch (error) {
-    console.error(error);
-    res.status(500).json({ error: "Internal Server Error" });
+    res.status(500).json({ error: "Failed to load blog posts" });
   }
 }
