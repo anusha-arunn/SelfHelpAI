@@ -6,11 +6,11 @@ export default async function handler(
   res: NextApiResponse
 ) {
   try {
-    const data = await fs.promises.readdir("public/Blog");
+    const data = await fs.promises.readdir("../../Blog");
     console.log(data);
     const allBlogs = [];
     for (const item of data) {
-      const myfile = await fs.promises.readFile(`public/Blog/${item}`, "utf-8");
+      const myfile = await fs.promises.readFile(`../../Blog/${item}`, "utf-8");
       const blog = JSON.parse(myfile);
       allBlogs.push(blog);
     }
