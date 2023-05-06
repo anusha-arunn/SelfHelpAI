@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 export default function Articles() {
   const [blogs, setBlogs] = useState([]);
   useEffect(() => {
-    fetch("https://aitherapist.co/api/blog")
+    fetch("https://aitherapist.co/api/blog", { method: "GET" })
       .then((a) => {
         return a.json();
       })
