@@ -40,12 +40,10 @@ export default function Blog() {
           </Link>
         </div>
       </div>
-      <article className="mx-auto max-w-2xl prose prose-stone dark:prose-invert">
+      <article className="mx-auto max-w-2xl prose prose-stone">
         <div className="text-left">
-          <div className="text-xl font-semibold dark:text-gray-100">
-            {post.title}
-          </div>
-          <div className="text-m font-light text-slate-800 dark:text-gray-200">
+          <div className="text-xl font-semibold">{post.title}</div>
+          <div className="text-m font-light text-slate-800">
             {post.description}
           </div>
           <br />
